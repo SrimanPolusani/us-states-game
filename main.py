@@ -18,7 +18,7 @@ def take_input(numb_of_correct_ans, numb_of_total_sates):
     return answer
 
 
-states_data = pandas.read_csv("./50_states.csv")
+states_data = pandas.read_csv("50_states.csv")
 all_states_lst = states_data.state.to_list()
 all_x_values = states_data.x.to_list()
 all_y_values = states_data.y.to_list()

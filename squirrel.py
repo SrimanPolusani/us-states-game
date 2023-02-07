@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Reading CSV file using Pandas
-squirrel_data = pd.read_csv("./squirrel_census.csv")
+squirrel_data = pd.read_csv("squirrel_census.csv")
 
 # Finding the no of squirrels w.r.t to color
 no_of_greys = len(
