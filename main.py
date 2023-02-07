@@ -30,7 +30,7 @@ def dialog_box(correct_ans):
 # 50_states.csv states and their positions on the image black_states_img.gif
 states_data = pandas.read_csv("50_states.csv")
 
-# Converting data into a lists
+# <---- Converting data into a lists ---->
 states_lst = states_data.state.to_list()
 x_values = states_data.x.to_list()
 y_values = states_data.y.to_list()
@@ -46,7 +46,7 @@ while game_is_on:
     for state in states_lst:
         if state.lower() == answer:
 
-            # Checking if it's a repeated answer
+            # <---- Checking if it's a repeated answer ---->
             repeated = detect_repeated_ans(input_ans_lst, answer)
             if repeated:
                 break
@@ -58,6 +58,7 @@ while game_is_on:
                 writing_turtle.write(x_value, y_value, state)
                 count_correct_ans += 1
 
+    # <---- End the loop if the game is over ---->
     if len(input_ans_lst) == 50:
         print("YOU WON THE GAME!")
         print("Game Over")
