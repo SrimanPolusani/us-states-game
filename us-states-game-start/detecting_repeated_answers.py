@@ -1,4 +1,3 @@
-
 def detect_repeated_ans(list_to_check, answer):
     if len(list_to_check) == 0:
         return None
